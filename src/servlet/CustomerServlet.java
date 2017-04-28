@@ -32,13 +32,13 @@ public class CustomerServlet extends BaseServlet {
         return "/msg.jsp";
     }
 
-//    public String findAll(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-//        List<Customer> customers = customerService.findAll();
-//
-//        request.setAttribute("cstmList", customers);
-//
-//        return "/list.jsp";
-//    }
+    public String findAll(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        List<Customer> customers = customerService.findAll();
+
+        request.setAttribute("cstmList", customers);
+
+        return "/list.jsp";
+    }
 
     public String findAll(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
        /*
